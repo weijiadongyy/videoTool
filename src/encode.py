@@ -6,8 +6,8 @@ from src.PATH import OUT_DIR, VIDEO_DIR
 
 
 # config = ["MP4META"]
-config = ["INITMP4", "MP4META"]
-
+# config = ["INITMP4", "MP4META"]
+config = ["MP4TOGIF"]
 
 # config = ["MP4TOM3U8"]
 

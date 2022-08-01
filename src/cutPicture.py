@@ -101,6 +101,7 @@ def getvideoStreamIndex(mediaInfo):
 
 
 def main(url, times):
+    url = "\"" + url + "\""
     mediaInfo = getMediaInfo(url)
     videoStreamIndex = getvideoStreamIndex(mediaInfo)
     print("videoStreamIndex 是:%d" % (videoStreamIndex))

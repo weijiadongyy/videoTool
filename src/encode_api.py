@@ -50,9 +50,21 @@ def mp4ToM3u8(inUrl, outUrl):
 
     return None
 
+def mp4ToGif(inUrl, outUrl):
+    outUrl = outUrl + ".gif"
+    shell = pathApply(BIN_SHELL_DIR["ffmpeg"]) + \
+            " -i " + pathApply(inUrl) + \
+            "" + \
+            pathApply(outUrl)
+    print(shell)
+
+    os.system(shell)
+    return outUrl
+
 
 HANDLER = {
     "INITMP4": initMp4,
     "MP4META": moveMp4MetaToHead,
-    "MP4TOM3U8": mp4ToM3u8
+    "MP4TOM3U8": mp4ToM3u8,
+    "MP4TOGIF": mp4ToGif,
 }
